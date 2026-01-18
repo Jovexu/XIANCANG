@@ -1,0 +1,159 @@
+[
+  {
+    "name": "user",
+    "fields": [
+      {
+        "name": "phone",
+        "type": "text",
+        "description": "User phone number",
+        "options": null
+      },
+      {
+        "name": "email",
+        "type": "text",
+        "description": "User email address",
+        "options": null
+      },
+      {
+        "name": "password",
+        "type": "text",
+        "description": "User password",
+        "options": null
+      },
+      {
+        "name": "points",
+        "type": "number",
+        "description": "User current points balance",
+        "options": null
+      },
+      {
+        "name": "payment_method",
+        "type": "text",
+        "description": "Bound payment method (wechat/alipay)",
+        "options": null
+      },
+      {
+        "name": "invite_code",
+        "type": "text",
+        "description": "Unique 6-digit number for user invitation",
+        "options": null
+      },
+      {
+        "name": "invited_by",
+        "type": "text",
+        "description": "The invite code of the user who invited this user",
+        "options": null
+      },
+      {
+        "name": "is_inviter_rewarded",
+        "type": "bool",
+        "description": "Whether the inviter has received the reward for this user",
+        "options": null
+      },
+      {
+        "name": "address_code",
+        "type": "text",
+        "description": "Deprecated",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "freight",
+    "fields": [
+      {
+        "name": "origin",
+        "type": "text",
+        "description": "Port of origin",
+        "options": null
+      },
+      {
+        "name": "destination",
+        "type": "text",
+        "description": "Port of destination",
+        "options": null
+      },
+      {
+        "name": "price",
+        "type": "number",
+        "description": "Price in USD",
+        "options": null
+      },
+      {
+        "name": "volume",
+        "type": "number",
+        "description": "Available quantity",
+        "options": null
+      },
+      {
+        "name": "carrier",
+        "type": "text",
+        "description": "Shipping carrier name",
+        "options": null
+      },
+      {
+        "name": "container_type",
+        "type": "text",
+        "description": "Type of container (e.g. 40HQ)",
+        "options": null
+      },
+      {
+        "name": "cutoff_date",
+        "type": "text",
+        "description": "Cutoff date YYYY-MM-DD",
+        "options": null
+      },
+      {
+        "name": "surcharges",
+        "type": "text",
+        "description": "Surcharges detail text",
+        "options": null
+      },
+      {
+        "name": "provider_info",
+        "type": "text",
+        "description": "Provider contact info string or JSON",
+        "options": null
+      },
+      {
+        "name": "status",
+        "type": "text",
+        "description": "Listing status: active, audit_pending, closed",
+        "options": [
+          "active",
+          "audit_pending",
+          "closed"
+        ]
+      },
+      {
+        "name": "creator_id",
+        "type": "text",
+        "description": "ID of the user who created the listing",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "system_settings",
+    "fields": [
+      {
+        "name": "setting_key",
+        "type": "text",
+        "description": "Unique key for the setting",
+        "options": null
+      },
+      {
+        "name": "setting_value",
+        "type": "text",
+        "description": "Value of the setting",
+        "options": null
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "description": "Description of what this setting controls",
+        "options": null
+      }
+    ]
+  }
+]

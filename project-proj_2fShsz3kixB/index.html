@@ -1,0 +1,95 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现舱汇 (XianCangHui) - 国际海运现舱交易平台</title>
+    <meta name="description" content="现舱汇 - 国际海运现舱交易平台，真实、高效、实时">
+    <meta name="keywords" content="海运, 运费查询, 国际物流, 舱位匹配">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary-color: #006994; /* Ocean Blue */
+            --accent-color: #d4af37; /* Gold */
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-sans {
+            font-family: 'Lato', sans-serif;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply bg-[var(--bg-color)] text-[var(--text-main)] font-sans antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-serif text-[var(--primary-color)];
+        }
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-2 rounded-sm hover:bg-slate-800 transition-colors duration-300 font-medium tracking-wide flex items-center justify-center gap-2;
+        }
+        .btn-accent {
+            @apply bg-[var(--accent-color)] text-white px-6 py-2 rounded-sm hover:bg-yellow-600 transition-colors duration-300 font-medium tracking-wide flex items-center justify-center gap-2;
+        }
+        .btn-outline {
+            @apply border border-[var(--primary-color)] text-[var(--primary-color)] px-6 py-2 rounded-sm hover:bg-[var(--primary-color)] hover:text-white transition-colors duration-300 font-medium tracking-wide flex items-center justify-center gap-2;
+        }
+        .input-field {
+            @apply w-full px-4 py-3 border border-slate-200 rounded-sm focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all;
+        }
+    }
+
+    @layer components {
+        .glass-panel {
+            @apply bg-white bg-opacity-95 backdrop-blur-sm shadow-xl border border-slate-100;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #b88746, #fdf5a6, #b88746);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    </style>
+    <meta name="twitter:title" content="现舱汇 (XianCangHui) - 国际海运现舱交易平台">
+    <meta name="twitter:description" content="现舱汇 - 国际海运现舱交易平台，真实、高效、实时">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- Scripts -->
+    <script type="text/babel" src="utils/mockData.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/NotificationDropdown.js"></script>
+    <script type="text/babel" src="components/UserCenter.js"></script>
+    <script type="text/babel" src="components/TermsModal.js"></script>
+    <script type="text/babel" src="components/PublishModal.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/Auth.js"></script>
+    <script type="text/babel" src="components/RechargeModal.js"></script>
+    <script type="text/babel" src="components/FreightCard.js"></script>
+    <script type="text/babel" src="components/FreightList.js"></script>
+    <script type="text/babel" src="components/AdSection.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="app.js"></script>
+
+
+
+</body>
+
+</html>
